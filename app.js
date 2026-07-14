@@ -123,7 +123,6 @@ function render(data) {
   if (sub.status === "active") {
     btns.push(`<button class="btn primary" data-a="pay">Продлить подписку · ${sub.sum} ₽</button>`);
     if (sub.tariff === "basic") btns.push(`<button class="btn" data-a="upgrade">Апгрейд до Премиум ✨</button>`);
-    btns.push(`<button class="btn" data-a="edits">Заказать правки</button>`);
   }
   if (sub.status === "cancelled" || sub.status === "expired") {
     btns.push(`<button class="btn primary" data-a="pay">Возобновить подписку · ${sub.sum} ₽</button>`);
